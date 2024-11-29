@@ -69,8 +69,8 @@ class Flare
     protected bool $withStackFrameArguments = true;
 
     public static function make(
-        string $apiKey = null,
-        ContextProviderDetector $contextDetector = null
+        ?string $apiKey = null,
+        ?ContextProviderDetector $contextDetector = null
     ): self {
         $client = new Client($apiKey);
 
